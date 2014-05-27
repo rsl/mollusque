@@ -13,3 +13,12 @@ group :development do
   gem 'capistrano'
   gem 'spring'
 end
+
+group :test do
+  gem 'shoulda-context'
+  gem 'shoulda-matchers'
+end
+
+group :development, :test do
+  gem 'factory_girl_rails'
+end
