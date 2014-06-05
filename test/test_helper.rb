@@ -3,11 +3,18 @@ require File.expand_path('../../config/environment', __FILE__)
 require 'rails/test_help'
 
 class ActiveSupport::TestCase
-  # Setup all fixtures in test/fixtures/*.yml for all tests in alphabetical order.
-  #
-  # Note: You'll currently still have to declare fixtures explicitly in integration tests
-  # -- they do not yet inherit this setting
-  fixtures :all
+  include FactoryGirl::Syntax::Methods
+end
 
-  # Add more helper methods to be used by all tests here...
+class ActionController::TestCase
+  def self.authenticated_context
+    context 'Authenticated requests' do
+      setup do
+        @request.headers['HTTP_AUTHORIZATION'] =
+          ActionController::HttpAuthentication::Token.encode_credentials(ENV['MOLLUSQUE_API_TOKEN'])
+      end
+
+      yield
+    end
+  end
 end
