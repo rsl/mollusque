@@ -3,6 +3,9 @@ class ApplicationController < ActionController::API
   include ActionController::ImplicitRender
   include ActionController::HttpAuthentication::Token::ControllerMethods
 
+  respond_to :json
+
+  before_action :force_json
   before_action :authenticate_token
 
 private
@@ -16,5 +19,9 @@ private
 
   def allow_unauthenticated_get_requests?
     false
+  end
+
+  def force_json
+    request.format = 'json'
   end
 end
