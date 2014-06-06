@@ -18,7 +18,7 @@ end
 group :test do
   gem 'shoulda-context', '1.2.1'
   gem 'shoulda-matchers', '2.6.1'
-  gem 'shoulda_render_json', '0.0.2'
+  gem 'shoulda_render_json', '0.0.3'
 end
 
 group :development, :test do
