@@ -3,3 +3,4 @@ rvm:
   - 2.1.2
 before_script:
   - bundle exec rake db:create db:migrate
+secure: "WiZ9n9PWQshH4dkj0AjuV+OgPSQA0x7+v7xbc7b6IcDvyshPqer0hWSlq3PRF+lHEi67Vl/lNWrkG6zhsZehnq0zqdKe/yIJp7X9thHlQq80t3v5UpTr+8by/lkW5VIfwRRvHNwbo4mSIgQbGldrwE4Ud1XkpOM94YmVpROSYf4="
