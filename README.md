@@ -1,4 +1,4 @@
-# Mollusque
+# Mollusque [![Code Climate](https://codeclimate.com/github/rsl/mollusque.png)](https://codeclimate.com/github/rsl/mollusque) [![Build Status](https://travis-ci.org/rsl/mollusque.svg?branch=master)](https://travis-ci.org/rsl/mollusque)
 
 Open source content-management-y API platform
 
