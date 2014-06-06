@@ -10,7 +10,7 @@ Just clone the repo.
 
 Mollusque depends on the following:
 
-* Ruby 2.x and 1.9.3
+* Ruby 2.1.2, though it most likely works for anything back to 1.9.3. I just don't have Travis builds for them all out of niceness.
 * PostgresSQL
 * [Unicorn](http://unicorn.bogomips.org/)
 * [Figaro](https://github.com/laserlemon/figaro) for configuration
